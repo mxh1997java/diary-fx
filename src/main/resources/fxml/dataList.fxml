@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+   fx:controller="www.maxinhai.com.diaryfx.controller.DataListController">
+   <center>
+      <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" fx:id="tableView">
+         <columns>
+            <!--<TableColumn prefWidth="75.0" text="名字" />-->
+            <!--<TableColumn prefWidth="75.0" text="年龄" />-->
+            <!--<TableColumn prefWidth="75.0" text="性别" />-->
+            <!--<TableColumn prefWidth="75.0" text="地址" />-->
+            <!--<TableColumn prefWidth="75.0" text="时间" />-->
+            <!--<TableColumn prefWidth="75.0" text="操作" />-->
+         </columns>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <VBox prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label text="名字: " />
+                  <TextField text="请输入名字" fx:id="nameTextFiled">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="描述: ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField text="请输入描述" fx:id="descTextFiled" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Label text="时间: " />
+                  <DatePicker fx:id="startTextFiled">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <DatePicker fx:id="endTextFiled">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Button mnemonicParsing="false" text="查询" fx:id="query">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="重置" fx:id="reset">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
