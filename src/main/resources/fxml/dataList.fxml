@@ -74,4 +74,25 @@
          </children>
       </VBox>
    </top>
+   <bottom>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="日记">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="添加" fx:id="addDiary" onAction="#toWriteDiary" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="标签">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="添加" fx:id="addLabel" onAction="#toLabel" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="关于">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="作者" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </bottom>
 </BorderPane>

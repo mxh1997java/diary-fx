@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="www.maxinhai.com.diaryfx.controller.DiaryController">
+   <center>
+      <VBox prefHeight="307.0" prefWidth="591.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="titleLabel" contentDisplay="CENTER" minHeight="20.0" minWidth="50.0" text="标题: " textAlignment="CENTER">
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField prefWidth="200.0" fx:id="titleTextFile" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="tagLabel" minHeight="20.0" minWidth="50.0" text="标签: " />
+                  <TextField minWidth="100.0" prefWidth="200.0" fx:id="tagTextFile" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="contentLabel" minHeight="20.0" minWidth="50.0" text="内容: " />
+                  <TextArea prefHeight="200.0" prefWidth="200.0" fx:id="contentTextArea"/>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="timeLabel" minHeight="20.0" minWidth="50.0" text="时间: " />
+                  <DatePicker />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="保存" onAction="#addDiary" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="日记">
+            <items>
+              <MenuItem mnemonicParsing="false" text="添加" fx:id="addDairy" onAction="#toWriteDiary" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="标签">
+            <items>
+              <MenuItem mnemonicParsing="false" text="添加" fx:id="addLabel" onAction="#toLabel" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="关于">
+            <items>
+              <MenuItem mnemonicParsing="false" text="作者" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <Label text="鑫海才华有限公司" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
